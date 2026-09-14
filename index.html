@@ -1,13 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi" class="scroll-smooth">
 <head>
+  
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yi3zqaksf0");
+    </script>
+
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://tamperemove.fi">
-    <title></title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- PRIMARY SEO METAS -->
+    <title>Muuttopalvelu ja Kuljetus Tampere | ROSH Transport</title>
+    <meta name="description" content="Ropea Onnistunut Siirto Hoituu. Edullinen ja luotettava muuttopalvelu, pakettiautovuokraus ja kuljetus Tampereella (Hervanta, Kaleva, Vuores). Katso kiinteät hinnat ja varaa!">
+    <meta name="keywords" content="muuttopalvelu Tampere, kuljetus Tampere, muuttoapu, pakettiauto kuljettajalla, halpa muutto Tampere, opiskelijamuutto, ROSH Transport">
+    <link rel="canonical" href="https://roshtransport.fi/">
+
+    <!-- OPEN GRAPH / SOCIAL SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://roshtransport.fi/">
+    <meta property="og:title" content="Muuttopalvelu ja Kuljetus Tampere | ROSH Transport">
+    <meta property="og:description" content="Ropea Onnistunut Siirto Hoituu. Nopea ja vaivaton muuttopalvelu Tampereella. Vartissa varaukset ja selkeät hinnat!">
+    <meta property="og:locale" content="fi_FI">
+
+    <!-- LOCAL BUSINESS SCHEMA (JSON-LD FOR GOOGLE SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MovingCompany",
+      "name": "ROSH Transport",
+      "alternateName": "Ropea Onnistunut Siirto Hoituu",
+      "url": "https://roshtransport.fi",
+      "telephone": "+358400000000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tampere",
+        "addressRegion": "Pirkanmaa",
+        "addressCountry": "FI"
+      },
+      "areaServed": ["Tampere", "Hervanta", "Kaleva", "Vuores", "Keskusta", "Pirkanmaa"],
+      "priceRange": "€€",
+      "description": "Luotettava muuttopalvelu ja kuljetus Tampereella."
+    }
+    </script>
+
+    <!-- TAILWIND CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        window.location.replace("https://tamperemove.fi/");
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosh: { 50: '#f0fdf4', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 900: '#14532d' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Touch optimization for mobile inputs */
+        input, select, textarea { font-size: 16px !important; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-rosh-500 selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-rosh-500 rounded-lg p-1">
+                <span class="text-2xl font-black tracking-tight text-slate-900">ROSH<span class="text-rosh-600">.</span></span>
+                <span class="text-xs font-semibold px-2 py-0.5 bg-rosh-50 text-rosh-700 rounded-full border border-rosh-200">Tampere</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#hinnat" class="hover:text-rosh-600 transition">Hinnasto</a>
+                <a href="#alueet" class="hover:text-rosh-600 transition">Palvelualueet</a>
+                <a href="#laskuri" class="hover:text-rosh-600 transition">Varaa heti</a>
+            </nav>
+            <div>
+                <a href="#laskuri" class="bg-slate-900 hover:bg-rosh-600 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition shadow-sm active:scale-95">
+                    Varaa Muutto
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-slate-900 text-white overflow-hidden py-16 sm:py-24 lg:py-28">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <div class="inline-block mb-4 px-3.5 py-1 bg-rosh-900/60 border border-rosh-500/30 rounded-full text-rosh-400 text-xs font-mono tracking-widest uppercase">
+                R • O • S • H Transport
+            </div>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Ropea Onnistunut Siirto Hoituu
+            </h1>
+            <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto mb-8 sm:mb-10 font-light leading-relaxed">
+                Vaivaton ja nopea muuttopalvelu, tavarankuljetus sekä pakettiauto kuljettajalla Tampereella ja koko Pirkanmaalla.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+                <a href="#hinnat" class="w-full sm:w-auto bg-rosh-600 hover:bg-rosh-500 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-rosh-600/20 active:scale-95 text-center">
+                    Katso Kiinteät Hinnat
+                </a>
+                <a href="#laskuri" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-700 transition active:scale-95 text-center">
+                    Laske & Varaa Heti
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING OPTIONS SECTION -->
+    <section id="hinnat" class="py-16 sm:py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-4xl font-bold tracking-tight mb-4">Muuton ja Kuljetuksen Hinnasto</h2>
+            <p class="text-sm sm:text-base text-slate-600">Selkeät hinnat ilman piilokuluja. Valitse tarpeisiisi sopivin paketti Tampereen alueella.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Tier 1 -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Kevyt</span>
+                    <h3 class="text-xl sm:text-2xl font-bold mt-4 mb-2">Pikakuljetus</h3>
+                    <p class="text-sm text-slate-500 mb-6">Yksittäisten huonekalujen, tori-ostosten tai isojen laatikoiden siirto.</p>
+                    <div class="text-3xl sm:text-4xl font-extrabold mb-6">€49 <span class="text-sm font-normal text-slate-500">/ alkaen</span></div>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li class="flex items-center">✓ Pakettiauto + Kuljettaja</li>
+                        <li class="flex items-center">✓ Kantoapu 1 hlö mukana</li>
+                        <li class="flex items-center">✓ Nopea nouto Tampereella</li>
+                    </ul>
+                </div>
+                <a href="#laskuri" class="block text-center bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold py-3.5 rounded-xl transition">Valitse tämä</a>
+            </div>
+
+            <!-- Tier 2 (Featured) -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-rosh-500 shadow-xl shadow-rosh-500/10 flex flex-col justify-between relative">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-rosh-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                    Suosituin
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-rosh-700 bg-rosh-50 px-3 py-1 rounded-full">Kotiin</span>
+                    <h3 class="text-xl sm:text-2xl font-bold mt-4 mb-2">Yksiö / Kaksio Muutto</h3>
+                    <p class="text-sm text-slate-500 mb-6">Koko kodin muutto vaivattomasti ammattilaisten avustuksella.</p>
+                    <div class="text-3xl sm:text-4xl font-extrabold mb-6">€129 <span class="text-sm font-normal text-slate-500">/ alkaen</span></div>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li class="flex items-center">✓ Tilava muuttoauto</li>
+                        <li class="flex items-center">✓ 2 ammattitaitoista muuttajaa</li>
+                        <li class="flex items-center">✓ Suojausmateriaalit käytössä</li>
+                        <li class="flex items-center">✓ Toimii kaikkialla Tampereella</li>
+                    </ul>
+                </div>
+                <a href="#laskuri" class="block text-center bg-rosh-600 hover:bg-rosh-500 text-white font-semibold py-3.5 rounded-xl transition shadow-md shadow-rosh-600/20">Valitse tämä</a>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Iso</span>
+                    <h3 class="text-xl sm:text-2xl font-bold mt-4 mb-2">Perhemuutto</h3>
+                    <p class="text-sm text-slate-500 mb-6">Isommat kerrostalo- ja rivitaloasunnot kattavalla kalustolla.</p>
+                    <div class="text-3xl sm:text-4xl font-extrabold mb-6">€249 <span class="text-sm font-normal text-slate-500">/ alkaen</span></div>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li class="flex items-center">✓ Suuri kalusto / tarvittaessa 2 autoa</li>
+                        <li class="flex items-center">✓ 2–3 kokenutta muuttajaa</li>
+                        <li class="flex items-center">✓ Täysi siirtopalvelu</li>
+                    </ul>
+                </div>
+                <a href="#laskuri" class="block text-center bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold py-3.5 rounded-xl transition">Valitse tämä</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO DISTRICTS SECTION -->
+    <section id="alueet" class="py-12 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-xl font-bold text-slate-800 mb-6">Palvelemme nopeasti kaikissa Tampereen kaupunginosissa</h2>
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium text-slate-700">Hervanta</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium text-slate-700">Kaleva</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium text-slate-700">Vuores</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium text-slate-700">Keskusta</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium text-slate-700">Tammela</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium text-slate-700">Lielahti</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium text-slate-700">Koivistonkylä</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE BOOKING FORM -->
+    <section id="laskuri" class="py-16 sm:py-20 bg-slate-100">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="bg-white rounded-3xl p-6 sm:p-12 shadow-sm border border-slate-200">
+                <div class="text-center mb-8 sm:mb-10">
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Varaa Muutto tai Pyydä Tarjous</h2>
+                    <p class="text-sm text-slate-500">Täytä tiedot alla, niin vahvistamme siirtosi nopeasti.</p>
+                </div>
+
+                <form id="bookingForm" class="space-y-5 sm:space-y-6" onsubmit="handleBooking(event)">
+                    <div class="grid sm:grid-cols-2 gap-5 sm:gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1.5">Koko nimi</label>
+                            <input type="text" required class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rosh-500 bg-slate-50/50" placeholder="Matti Meikäläinen">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1.5">Puhelinnumero</label>
+                            <input type="tel" required class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rosh-500 bg-slate-50/50" placeholder="040 1234567">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5 sm:gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1.5">Lähtöosoite / alue</label>
+                            <input type="text" required class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rosh-500 bg-slate-50/50" placeholder="esim. Hervanta, Insinöörinkatu">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1.5">Kohdeosoite / alue</label>
+                            <input type="text" required class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rosh-500 bg-slate-50/50" placeholder="esim. Kaleva, Ilmarinkatu">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5 sm:gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1.5">Valitse palvelu</label>
+                            <select class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rosh-500 bg-white">
+                                <option>Pikakuljetus (€80 alkaen)</option>
+                                <option>Yksiö / Kaksio muutto (€249 alkaen)</option>
+                                <option>Perhemuutto (€349-449 alkaen)</option>
+                                <option>Räätälöity kuljetustarjous</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1.5">Toivottu päivämäärä</label>
+                            <input type="date" required class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rosh-500 bg-slate-50/50">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1.5">Lisätiedot (kerrokset, hissi, isot tavarat)</label>
+                        <textarea rows="3" class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rosh-500 bg-slate-50/50" placeholder="Kerro lyhyesti kohteesta tai erikoistarpeista..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-slate-900 hover:bg-rosh-600 text-white font-semibold py-4 rounded-xl transition shadow-lg active:scale-98">
+                        Lähetä Varauspyyntö
+                    </button>
+
+                    <div id="successMsg" class="hidden p-4 bg-rosh-50 border border-rosh-200 text-rosh-700 rounded-xl text-center font-medium text-sm">
+                        Kiitos varauksestasi! Otamme sinuun yhteyttä tuota pikapuolin vahvistuksen merkeissä.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-center sm:text-left">
+            <div>
+                <span class="text-white font-bold text-lg">ROSH Transport</span>
+                <p class="text-xs text-slate-500 mt-1">Ropea Onnistunut Siirto Hoituu • Tampere, Finland</p>
+            </div>
+            <div class="flex space-x-6 text-slate-400">
+                <a href="#hinnat" class="hover:text-white transition">Hinnasto</a>
+                <a href="#alueet" class="hover:text-white transition">Alueet</a>
+                <a href="mailto:info@roshtransport.fi" class="hover:text-white transition">Ota yhteyttä</a>
+            </div>
+            <div class="text-xs text-slate-600">
+                © 2026 roshtransport.fi. Kaikki oikeudet pidätetään.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleBooking(e) {
+            e.preventDefault();
+            const msg = document.getElementById('successMsg');
+            msg.classList.remove('hidden');
+            msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            e.target.reset();
+        }
     </script>
 </body>
 </html>
